@@ -1,0 +1,21 @@
+<html lang="fr">
+<head>
+    <title>SuperShop</title>
+</head>
+<body>
+<%- include('./components/header'); %>
+<ul>
+    <% products.forEach(function(product) { %>
+        <li>
+            <strong><%= product.name %></strong>
+            <img src="<%= product.img %>"/>
+            <%= product.description %>
+            <%= product.price %>
+            <%= product.promote %>
+            <a href="/products/<%= product.id %>">En savoir plus</a>
+        </li>
+    <% }); %>
+</ul>
+<%- include('./components/footer') %>
+</body>
+</html>

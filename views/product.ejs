@@ -1,0 +1,14 @@
+<html lang="fr">
+<head>
+    <title>SuperShop</title>
+</head>
+<body>
+<%- include('./components/header'); %>
+            <strong><%= product.name %></strong>
+            <img src="<%= product.img %>"/>
+            <%= product.description %>
+            <%= product.price %>
+            <%= product.promote %>
+<%- include('./components/footer') %>
+</body>
+</html>
